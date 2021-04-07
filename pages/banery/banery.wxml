@@ -1,5 +1,5 @@
 <!-- <movable-area class='movable-box' > -->
-  <view class="main-container " style="background-image:url({{defaultUrl}})">
+  <view class="main-container " style="background-image:url({{backgroundUrl}})">
   <view class="pop"> 
     <dialog id='dialog' title='' content="" cancelText='知道了' confirm='谢谢你' bind:cancelEvent="_cancelEvent" bind:confirmEvent="_confirmEvent">
     <view slot="custom-content"></view>
@@ -10,26 +10,26 @@
     <view class="dialog_box">
       <van-icon class="close_btn" name="close" size="30px" color="white" catchtap='closeImg'/>
       <image  class="tip-img" wx:if="{{status==1}}"  src="http://i1.fuimg.com/735650/06e2ff383befb1ce.png"></image>
-      <image  class="tip-img" wx:if="{{status==3}}" src="http://i1.fuimg.com/735650/653a854718a2975f.png"></image>
+      <image  class="tip-img" wx:if="{{status==0}}" src="http://i1.fuimg.com/735650/653a854718a2975f.png"></image>
     </view>
-   
   </view>
-  <!-- <van-dialog id="van-dialog" /> -->
-  <text class="start-btn" bindtap="resetStart" wx:if="{{showReset==true}}">重新设置</text>
-  <!-- <image wx:if="{{status==1}}"  class="default-bg" src="http://i2.tiimg.com/735650/12183143c4a7f29b.png"></image> -->
-  <image wx:if="{{status==2}}" class="default-bg" src="http://i2.tiimg.com/735650/dbedbf4cc4830b10.png"></image>
+  <text class="start-btn" bindtap="resetStart" wx:if="{{showReset}}">重新设置</text>
+  <text class="start-btn" bindtap="reback" wx:if="{{showBack}}">返回相机界面</text>
+  <!-- <image wx:if="{{status==2}}" class="default-bg" src="http://i2.tiimg.com/735650/dbedbf4cc4830b10.png"></image>
   <image wx:if="{{status==3}}" class="default-bg" src="http://i2.tiimg.com/735650/0a0c7f3b9e6b1c50.png"></image>
-  <image wx:if="{{status==2}}"  src="../images/hand.jpg"></image>
+  <image wx:if="{{status==2}}"  src="../images/hand.jpg"></image> -->
   <image class="duster-img-old battery" 
+  wx-if="{{status==null}}"
   bindtouchmove="onTouchmoveOld"
   bindtouchstart="onTouchStart"
   style="left:{{old_left}}rpx;top:{{old_top}}rpx"
   src="http://i2.tiimg.com/735650/718bc1c415c49a80.png">
   </image>
   <image class="duster-img-new battery" 
+  wx-if="{{status==null}}"
   bindtouchmove="onTouchmoveNew"
   bindtouchstart="onTouchStart"
-  style="left:{{new_left}}%;top:{{new_top}}%"
+  style="left:{{new_left}}rpx;top:{{new_top}}rpx"
   src="http://i2.tiimg.com/735650/005fa5b08d88dfc7.png">
   </image>
   <!-- <movable-view
