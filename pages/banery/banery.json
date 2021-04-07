@@ -1,6 +1,8 @@
 {
     "usingComponents": {
-      "vant-dialog": "../../miniprogram_npm/vant-weapp/dialog"
+      "vant-dialog": "../../miniprogram_npm/vant-weapp/dialog/index",
+      "van-icon":"../../miniprogram_npm/vant-weapp/icon/index",
+      "dialog":"../../components/dialog/dialog"
     },
     "disableScroll":true
 }

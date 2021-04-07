@@ -1,11 +1,13 @@
 <view class='wx_dialog' hidden="{{!isShow}}">
   <view class='wx-mask'></view>
   <view class='wx-dialog-content'>
+    <van-icon name="close" size="30px" catchtap='_confirmEvent'/>
     <view class='wx-dialog-title'>{{ title }}</view>
     <view class='wx-dialog-contents'>{{ content }}</view>
-    <view class='wx-dialog-footer'>
+    <slot name="custom-content"></slot>
+    <!-- <view class='wx-dialog-footer'>
       <view class='wx-dialog-btn' catchtap='_cancelEvent'>{{ cancelText }}</view>
       <view class='wx-dialog-btn' catchtap='_confirmEvent'>{{ confirmText }}</view>
-    </view>
+    </view> -->
   </view>
 </view>

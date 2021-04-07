@@ -20,7 +20,7 @@ let oldReact = [] // 拖拽元素宽高
 let defaultH = 100 // 缺省高度
 let defaultW = 100 // 缺省宽度
 
-import Dialog from '../../miniprogram_npm/vant-weapp/dialog/index';
+import Dialog from '../../miniprogram_npm/vant-weapp/dialog/dialog';
 
 Page({
 
@@ -28,12 +28,14 @@ Page({
    * 页面的初始数据
    */
   data: {
+    showImg:false,
+    defaultUrl:'http://i2.tiimg.com/735650/12183143c4a7f29b.png',
     online:true,
     showReset:false,
-    old_left:160/ratio,
-    old_top:220/ratio,
-    new_left:40/ratio,
-    new_top:530/ratio,
+    old_left:310,
+    old_top:300,
+    new_left:10,
+    new_top:74,
     x_old:'',
     y_old:'',
     x_new:'',
@@ -44,7 +46,8 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    console.log(windowHeight,windowWidth,pixelRatio,screenWidth/750)
+    console.log(windowHeight,windowWidth,pixelRatio,screenWidth)
+    
     // this.backmusic()
   //   var innerAudioContext = wx.createInnerAudioContext()
   //   innerAudioContext.src='../pages/images/audio.mp3';
@@ -85,7 +88,26 @@ Page({
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
+    this.dialog = this.selectComponent("#dialog");
     
+  },
+  showDialog(){
+    this.dialog.showDialog();
+  },
+  closeImg(){
+    this.setData({
+      showImg:false
+    })
+  },
+  //取消事件 
+  _cancelEvent() {
+    console.log('你点击了取消');
+    this.dialog.hideDialog();
+  }, 
+  //确认事件 
+  _confirmEvent() {
+    console.log('你点击了确定');
+    this.dialog.hideDialog();
   },
   backmusic: function () {
     player();
@@ -145,7 +167,7 @@ Page({
         return false;
       }
       this.setData({
-        old_left:lef/ratio,
+        old_left:left/ratio,
         old_top:top/ratio
       })
     },

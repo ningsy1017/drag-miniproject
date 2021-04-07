@@ -1,22 +1,29 @@
-/* pages/banery/banery.wxss */
+@import '../../components/dialog/dialog.wxss';
 .default-bg{
   width:100%;
-  height:100vh;
+  height:100%;
   position: relative;
+  z-index: -1;
 }
 .movable-box {
   width: 100vw;
   height: 100vh;
 }
+
 .main-container{
   position: relative;
   height: 100vh;
-  overflow: hidden;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.close-btn{
+  position: relative;
 }
 .battery{
   width:40rpx;
   height:50rpx;
   position: absolute;
+  z-index: 0;
 }
 .duster{
   position: fixed;
@@ -42,9 +49,8 @@
   transform: translate(-50%,-20%);
 }
 .duster-img-old{
-  /* left: 10vw;
-  top:40vh; */
-  z-index: 9;
+  left: 40%;
+  top:30%;
 }
 .yaokong{
   width: 20rpx;
@@ -54,4 +60,16 @@
   left:200rpx;
   top:200rpx;
   background:#dcd80e;
+}
+.dialog_box{
+  position: absolute;
+  left:50%;
+  top:40%;
+  transform: translate(-50%,-50%);
+  z-index: 100;
+}
+.close_btn{
+  position: absolute;
+  right: 20rpx;
+  top:30rpx;
 }
