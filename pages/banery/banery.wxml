@@ -1,0 +1,43 @@
+<movable-area class='movable-box' >
+<view class="main-container ">
+  <text class="start-btn" bindtap="resetStart" wx:if="{{showReset==true}}">重新设置</text>
+  <!-- <image class=""></image> -->
+  <view class="yaokong"></view>
+  <image wx:if="{{status==1}}"  class="default-bg" src="http://i2.tiimg.com/735650/12183143c4a7f29b.png"></image>
+  <image wx:if="{{status==2}}" class="default-bg" src="http://i2.tiimg.com/735650/dbedbf4cc4830b10.png"></image>
+  <image wx:if="{{status==3}}" class="default-bg" src="http://i2.tiimg.com/735650/0a0c7f3b9e6b1c50.png"></image>
+  <image wx:if="{{status==2}}"  src="../images/hand.jpg"></image>
+  <image class="duster-img-old battery" 
+  bindtouchmove="onTouchmoveOld"
+  bindtouchstart="onTouchStart"
+  style="left:{{old_left}}rpx;top:{{old_top}}rpx" 
+  src="http://i2.tiimg.com/735650/718bc1c415c49a80.png">
+  </image>
+  <image class="duster-img-new battery" 
+  bindtouchmove="onTouchmoveNew"
+  bindtouchstart="onTouchStart"
+  style="left:{{new_left}}rpx;top:{{new_top}}rpx"
+  src="http://i2.tiimg.com/735650/005fa5b08d88dfc7.png">
+  </image>
+  <!-- <movable-view
+  class="duster"
+  wx:if="{{status==1}}"
+  bindchange="getPositionOld"
+    x='{{x_old}}'
+    y='{{y_old}}'
+    animation="false"
+    direction='all'>
+    <image class="duster-img-old battery"  src="http://i2.tiimg.com/735650/718bc1c415c49a80.png"></image>
+  </movable-view> -->
+  <!-- <movable-view
+  class="duster"
+  wx:if="{{status==1}}"
+  bindchange="getPositionNew"
+    x='{{x_new}}'
+    y='{{y_new}}'
+    animation="false"
+    direction='all'>
+    <image class="duster-img-new battery" src="http://i2.tiimg.com/735650/005fa5b08d88dfc7.png"></image>
+  </movable-view> -->
+</view>
+</movable-area>

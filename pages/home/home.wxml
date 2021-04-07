@@ -1,0 +1,7 @@
+
+<!-- <camera style="width: 100%; height: 100vh;"> -->
+<view class="main-container">
+  <image class="image-bg" src="http://i2.tiimg.com/735650/734a2c1ea85f11e2.jpg"></image>
+  <text class="start-btn" bindtap="goCamera">帮他安装电池</text>
+</view>
+<!-- </camera> -->

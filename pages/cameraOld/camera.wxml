@@ -1,0 +1,21 @@
+<!-- <camera style="width: 100%; height: 100vh;"> -->
+  <movable-area class='movable-box' >
+  <view class="main-content">
+      <image class="telev" src="../images/televisions@2x.png"></image>
+      <image class="power-line on-line" bindtap="changeStatus" data-status="false" wx:if="{{online==true}}" src="../images/on-line@3x.png"></image>
+      <image class="power-line off-line" bindtap="changeStatus"  data-status="true" wx:if="{{online==false}}" src="../images/off-line@3x.png"></image>
+      <image class="plug-board" src="../images/power-strip@2x.png"></image>
+  <movable-view
+  
+  class="duster"
+  bindchange="getPosition"
+    x='{{x}}'
+    y='{{y}}'
+    animation="false"
+    direction='all'>
+    <image class="duster-img" src="../images/51yuansu.com___5be60ec89f913@3x.png"></image>
+  </movable-view>
+  </view> 
+
+</movable-area>
+<!-- </camera> -->

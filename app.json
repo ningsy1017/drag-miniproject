@@ -1,0 +1,18 @@
+{
+  "pages": [
+    "pages/banery/banery",
+    "pages/start/start",
+    "pages/camera/camera",
+    "pages/home/home",
+    "pages/index/index",
+    "pages/logs/logs",
+    "components/dialog/dialog"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "Weixin",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json"
+}

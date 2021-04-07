@@ -1,0 +1,18 @@
+
+.start-btn{
+  width:60%;
+  margin:0 auto;
+  text-align: center;
+  padding:15rpx 40rpx;
+  border-radius: 60rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #dcd80e;
+  color: #fff;
+  box-sizing: border-box;
+  position: absolute;
+  left:50%;
+  top:90%;
+  transform: translate(-50%,-20%);
+}

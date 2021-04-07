@@ -1,0 +1,3 @@
+<view>
+  <text class="start-btn" bindtap="goHome">开始扫描</text>
+</view>

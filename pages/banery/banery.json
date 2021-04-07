@@ -1,0 +1,6 @@
+{
+    "usingComponents": {
+      "vant-dialog": "../../miniprogram_npm/vant-weapp/dialog"
+    },
+    "disableScroll":true
+}

@@ -1,0 +1,57 @@
+/* pages/banery/banery.wxss */
+.default-bg{
+  width:100%;
+  height:100vh;
+  position: relative;
+}
+.movable-box {
+  width: 100vw;
+  height: 100vh;
+}
+.main-container{
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+.battery{
+  width:40rpx;
+  height:50rpx;
+  position: absolute;
+}
+.duster{
+  position: fixed;
+  z-index: 10;
+}
+
+.start-btn{
+  width:60%;
+  margin:0 auto;
+  text-align: center;
+  padding:15rpx 40rpx;
+  border-radius: 60rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #dcd80e;
+  color: #fff;
+  box-sizing: border-box;
+  position: absolute;
+  left:50%;
+  top:93%;
+  z-index: 99;
+  transform: translate(-50%,-20%);
+}
+.duster-img-old{
+  /* left: 10vw;
+  top:40vh; */
+  z-index: 9;
+}
+.yaokong{
+  width: 20rpx;
+  height:20rpx;
+  display: inline-block;
+  position: absolute;
+  left:200rpx;
+  top:200rpx;
+  background:#dcd80e;
+}

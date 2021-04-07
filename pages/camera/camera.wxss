@@ -1,0 +1,11 @@
+/* pages/camera/camera.wxss */
+camera{
+  position: relative;
+}
+.count-number{
+  position: absolute;
+  left:50%;
+  top: 50%;
+  color: #dcd80e;
+  transform: translate(-50%,-50%);
+}
