@@ -28,12 +28,12 @@ Page({
     showReset:false, // 重玩按钮
     showImg:false,
     status:null,
-    backgroundUrl:'http://i2.tiimg.com/735650/12183143c4a7f29b.png',
+    backgroundUrl:'http://i2.tiimg.com/735650/31b331989dda2520.png',
     online:true,
-    old_left:310,
-    old_top:290,
+    old_left:300,
+    old_top:360,
     new_left:70,
-    new_top:740,
+    new_top:880,
     x_old:'',
     y_old:'',
     x_new:'',
@@ -110,7 +110,7 @@ Page({
    * 返回相机界面
    */
   reback(){
-    wx.redirectTo({
+    wx.switchTab({
       url: '/pages/start/start',
     })
   },
