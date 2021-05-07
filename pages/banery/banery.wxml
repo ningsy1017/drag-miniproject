@@ -9,8 +9,8 @@
     <view class='wx-mask'></view>
     <view class="dialog_box">
       <van-icon class="close_btn" name="close" size="30px" color="white" catchtap='closeImg'/>
-      <image  class="tip-img" wx:if="{{status==1}}"  src="http://i1.fuimg.com/735650/06e2ff383befb1ce.png"></image>
-      <image  class="tip-img" wx:if="{{status==0}}" src="http://i1.fuimg.com/735650/653a854718a2975f.png"></image>
+      <image  class="tip-img" wx:if="{{status==1}}"  src="http://nfdw.zhongzhenet.com/%E4%BD%A0%E7%9C%9F%E6%A3%92.png"></image>
+      <image  class="tip-img" wx:if="{{status==0}}" src="http://nfdw.zhongzhenet.com/%E5%A4%B1%E8%B4%A5%E5%95%A6.png"></image>
     </view>
   </view>
   <text class="start-btn" bindtap="resetStart" wx:if="{{showReset}}">重新设置</text>
@@ -23,14 +23,14 @@
   bindtouchmove="onTouchmoveOld"
   bindtouchstart="onTouchStart"
   style="left:{{old_left}}rpx;top:{{old_top}}rpx"
-  src="https://nfdw.zhongzhenet.com/%E6%97%A7%E7%94%B5%E6%B1%A0.png">
+  src="http://nfdw.zhongzhenet.com/%E6%97%A7%E7%94%B5%E6%B1%A0.png">
   </image>
   <image class="duster-img-new battery" 
   wx-if="{{status==null}}"
   bindtouchmove="onTouchmoveNew"
   bindtouchstart="onTouchStart"
   style="left:{{new_left}}rpx;top:{{new_top}}rpx"
-  src="https://nfdw.zhongzhenet.com/%E6%96%B0%E7%94%B5%E6%B1%A0.png">
+  src="http://nfdw.zhongzhenet.com/%E6%96%B0%E7%94%B5%E6%B1%A0.png">
   </image>
   <!-- <movable-view
   class="duster"

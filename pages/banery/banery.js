@@ -28,12 +28,12 @@ Page({
     showReset:false, // 重玩按钮
     showImg:false,
     status:null,
-    backgroundUrl:'',
+    backgroundUrl:'http://nfdw.zhongzhenet.com/%E9%BB%98%E8%AE%A4%E8%83%8C%E6%99%AF.png',
     online:true,
-    old_left:300,
-    old_top:360,
+    old_left:310,
+    old_top:290,
     new_left:70,
-    new_top:880,
+    new_top:740,
     x_old:'',
     y_old:'',
     x_new:'',
@@ -98,7 +98,7 @@ Page({
       showReset:false,
       showBack:false,
       status:null,
-      backgroundUrl:'https://nfdw.zhongzhenet.com/%E9%BB%98%E8%AE%A4%E8%83%8C%E6%99%AF.png',
+      backgroundUrl:'http://nfdw.zhongzhenet.com/%E9%BB%98%E8%AE%A4%E8%83%8C%E6%99%AF.png',
       old_left:310,
       old_top:290,
       new_left:70,
@@ -156,7 +156,7 @@ Page({
       if((rpxLeft>220 && rpxLeft<260)&&(rpxTop>260 && rpxTop<300)){
         console.log('成功了')
         this.setData({
-          backgroundUrl:'https://nfdw.zhongzhenet.com/%E6%88%90%E5%8A%9F%E5%90%8E%E8%83%8C%E6%99%AF.png',
+          backgroundUrl:'http://nfdw.zhongzhenet.com/%E6%88%90%E5%8A%9F%E5%90%8E%E8%83%8C%E6%99%AF.png',
           status:1,
           showImg:true
         })
@@ -182,7 +182,7 @@ Page({
       console.log(rpxLeft,rpxTop)
       if((rpxLeft>100&&rpxLeft<150)&&(rpxTop>800&&rpxTop<850)){
         this.setData({
-          backgroundUrl:'https://nfdw.zhongzhenet.com/%E6%88%90%E5%8A%9F%E5%90%8E%E8%83%8C%E6%99%AF.png',
+          backgroundUrl:'http://nfdw.zhongzhenet.com/%E6%88%90%E5%8A%9F%E5%90%8E%E8%83%8C%E6%99%AF.png',
           status:0,
           showImg:true
         })
