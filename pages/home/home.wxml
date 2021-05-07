@@ -1,7 +1,7 @@
 
 <!-- <camera style="width: 100%; height: 100vh;"> -->
 <view class="main-container">
-  <image class="image-bg" src="https://nfdw.zhongzhenet.com/%E7%AC%AC%E4%B8%80%E9%A1%B5.jpeg"></image>
+  <image class="image-bg" src="http://nfdw.zhongzhenet.com/%E7%AC%AC%E4%B8%80%E9%A1%B5.jpeg"></image>
   <text class="start-btn" bindtap="goCamera">帮他安装电池</text>
 </view>
 <!-- </camera> -->
