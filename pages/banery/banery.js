@@ -50,10 +50,15 @@ Page({
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-    // this.dialog = this.selectComponent("#dialog");
-    // audio.src = '../../pages/images/audio.mp3';
-    // audio.obeyMuteSwitch = false
-    // audio.play();
+    this.dialog = this.selectComponent("#dialog");
+
+    audio.title = "小游戏"
+    audio.src = 'https://nfdw.zhongzhenet.com/4401a893-d139-4c33-997f-6897b1ac9051.mp3';
+    audio.obeyMuteSwitch = false
+    audio.play();
+    audio.onEnded(() => {
+      audio.play();
+    })
     // this.backmusic()
 
   },
