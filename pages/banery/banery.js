@@ -1,4 +1,4 @@
-// pages/banery/banery.js
+
 let {
   windowWidth,
   windowHeight,
@@ -28,7 +28,7 @@ Page({
     showReset:false, // 重玩按钮
     showImg:false,
     status:null,
-    backgroundUrl:'http://i2.tiimg.com/735650/31b331989dda2520.png',
+    backgroundUrl:'',
     online:true,
     old_left:300,
     old_top:360,
@@ -51,10 +51,10 @@ Page({
    */
   onReady: function () {
     // this.dialog = this.selectComponent("#dialog");
-    audio.src = '../../pages/images/audio.mp3';
-    audio.obeyMuteSwitch = false
-    audio.play();
-    this.backmusic()
+    // audio.src = '../../pages/images/audio.mp3';
+    // audio.obeyMuteSwitch = false
+    // audio.play();
+    // this.backmusic()
 
   },
   showDialog(){
@@ -98,7 +98,7 @@ Page({
       showReset:false,
       showBack:false,
       status:null,
-      backgroundUrl:'http://i2.tiimg.com/735650/12183143c4a7f29b.png',
+      backgroundUrl:'https://nfdw.zhongzhenet.com/%E9%BB%98%E8%AE%A4%E8%83%8C%E6%99%AF.png',
       old_left:310,
       old_top:290,
       new_left:70,
@@ -156,7 +156,7 @@ Page({
       if((rpxLeft>220 && rpxLeft<260)&&(rpxTop>260 && rpxTop<300)){
         console.log('成功了')
         this.setData({
-          backgroundUrl:'http://i2.tiimg.com/735650/dbedbf4cc4830b10.png',
+          backgroundUrl:'https://nfdw.zhongzhenet.com/%E6%88%90%E5%8A%9F%E5%90%8E%E8%83%8C%E6%99%AF.png',
           status:1,
           showImg:true
         })
@@ -182,7 +182,7 @@ Page({
       console.log(rpxLeft,rpxTop)
       if((rpxLeft>100&&rpxLeft<150)&&(rpxTop>800&&rpxTop<850)){
         this.setData({
-          backgroundUrl:'http://i2.tiimg.com/735650/0a0c7f3b9e6b1c50.png',
+          backgroundUrl:'https://nfdw.zhongzhenet.com/%E6%88%90%E5%8A%9F%E5%90%8E%E8%83%8C%E6%99%AF.png',
           status:0,
           showImg:true
         })
